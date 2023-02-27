@@ -21,13 +21,10 @@ struct ContentView: View {
                 }
                 
             }
-            
-            /*
-             */
             .padding()
             
-            
-        }.navigationTitle("Société")
+            .navigationTitle("Sociétés")
+        }
     }
 }
 struct ContentView_Previews: PreviewProvider {

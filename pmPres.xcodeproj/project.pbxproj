@@ -11,6 +11,9 @@
 		7BC7B81329ACE540009C66C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC7B81229ACE540009C66C7 /* ContentView.swift */; };
 		7BC7B81529ACE542009C66C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BC7B81429ACE542009C66C7 /* Assets.xcassets */; };
 		7BC7B81829ACE542009C66C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BC7B81729ACE542009C66C7 /* Preview Assets.xcassets */; };
+		7BC7B82B29ACF2A9009C66C7 /* Fakery in Frameworks */ = {isa = PBXBuildFile; productRef = 7BC7B82A29ACF2A9009C66C7 /* Fakery */; };
+		7BC7B82D29ACF464009C66C7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC7B82C29ACF464009C66C7 /* Model.swift */; };
+		7BC7B82F29ACF544009C66C7 /* CompanyViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC7B82E29ACF544009C66C7 /* CompanyViewRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,8 @@
 		7BC7B81229ACE540009C66C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7BC7B81429ACE542009C66C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BC7B81729ACE542009C66C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7BC7B82C29ACF464009C66C7 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		7BC7B82E29ACF544009C66C7 /* CompanyViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyViewRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BC7B82B29ACF2A9009C66C7 /* Fakery in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +59,8 @@
 			children = (
 				7BC7B81029ACE540009C66C7 /* pmPresApp.swift */,
 				7BC7B81229ACE540009C66C7 /* ContentView.swift */,
+				7BC7B82E29ACF544009C66C7 /* CompanyViewRow.swift */,
+				7BC7B82C29ACF464009C66C7 /* Model.swift */,
 				7BC7B81429ACE542009C66C7 /* Assets.xcassets */,
 				7BC7B81629ACE542009C66C7 /* Preview Content */,
 			);
@@ -83,6 +91,9 @@
 			dependencies = (
 			);
 			name = pmPres;
+			packageProductDependencies = (
+				7BC7B82A29ACF2A9009C66C7 /* Fakery */,
+			);
 			productName = pmPres;
 			productReference = 7BC7B80D29ACE540009C66C7 /* pmPres.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 7BC7B80429ACE540009C66C7;
+			packageReferences = (
+				7BC7B82929ACF2A9009C66C7 /* XCRemoteSwiftPackageReference "Fakery" */,
+			);
 			productRefGroup = 7BC7B80E29ACE540009C66C7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BC7B82D29ACF464009C66C7 /* Model.swift in Sources */,
+				7BC7B82F29ACF544009C66C7 /* CompanyViewRow.swift in Sources */,
 				7BC7B81329ACE540009C66C7 /* ContentView.swift in Sources */,
 				7BC7B81129ACE540009C66C7 /* pmPresApp.swift in Sources */,
 			);
@@ -339,6 +355,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7BC7B82929ACF2A9009C66C7 /* XCRemoteSwiftPackageReference "Fakery" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vadymmarkov/Fakery";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7BC7B82A29ACF2A9009C66C7 /* Fakery */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7BC7B82929ACF2A9009C66C7 /* XCRemoteSwiftPackageReference "Fakery" */;
+			productName = Fakery;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7BC7B80529ACE540009C66C7 /* Project object */;
 }

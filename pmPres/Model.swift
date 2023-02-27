@@ -1,0 +1,27 @@
+//
+//  Model.swift
+//  pmPres
+//
+//  Created by Apprenant 16 on 27/02/2023.
+//
+
+import Foundation
+import Fakery
+
+struct Company: Identifiable {
+    let id = UUID()
+    // let business: String
+    let name: String
+    let address: String
+}
+
+let faker = Faker(locale: "fr-FR") // Adjust "locale" with desired country: see documentation here : https://faker.readthedocs.io/en/master/locales.html
+
+let companies = [
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+]

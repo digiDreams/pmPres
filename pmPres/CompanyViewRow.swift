@@ -12,7 +12,10 @@ struct CompanyViewRow: View {
     var company: Company
     
     var body: some View {
+        VStack {
         Text("Bienvenue à la société \(company.name)")
+        Text(company.address)
+        }.multilineTextAlignment(.leading)
     }
 }
 

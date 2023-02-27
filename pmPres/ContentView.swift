@@ -12,13 +12,22 @@ struct ContentView: View {
     var someCompanies = companies
     var body: some View {
         NavigationStack {
-            VStack {
-                List(someCompanies) { company in
+            
+            List(someCompanies, id: \.self) { company in
+                NavigationLink {
                     CompanyViewRow(company: company)
+                } label: {
+                    Text(company.name)
                 }
-                .padding()
+                
             }
-        }
+            
+            /*
+             */
+            .padding()
+            
+            
+        }.navigationTitle("Société")
     }
 }
 struct ContentView_Previews: PreviewProvider {

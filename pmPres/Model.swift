@@ -8,7 +8,7 @@
 import Foundation
 import Fakery
 
-struct Company: Identifiable {
+struct Company: Identifiable, Hashable {
     let id = UUID()
     // let business: String
     let name: String

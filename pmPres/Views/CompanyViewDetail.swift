@@ -9,11 +9,21 @@ import SwiftUI
 
 struct CompanyViewDetail: View {
     var company: Company
+    
+    /* var freshData: ()
+    var freshData: () = callIA(companyDetails: company.name)
+    var retrievedIntel = String(decoding: freshData, as: UTF8.self)
+     */
+    
     var body: some View {
          Text("Informations from chatGPT about \(company.name):")
              .font(.title2)
              .bold()
              .padding(.bottom)
+      //  callIA(companyDetails: company.name)
+        let freshData: () = callIA(companyDetails: company.name)
+        let convertedData = String(decoding: freshData, as: UTF8.self)
+        Text(convertedData)
     }
 }
 

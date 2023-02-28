@@ -11,6 +11,9 @@ import OpenAISwift
 
 // let accessToken = ProcessInfo.processInfo.environment["NETOKEN"]
 
+/* struct Answer: Decodable  {
+    let value: String
+} */
 
 let openAI = OpenAISwift(authToken: "NETOKEN")
 
@@ -21,6 +24,14 @@ func callIA(companyDetails: String) {
             print(success.choices.first?.text ?? "")
         case .failure(let failure):
             print(failure.localizedDescription)
+            
         }
+        /* var decoded = result
+        return decoded = try JSONDecoder().decode */
     }
+    
+    
+    // let companyDesc = String(decoding: data, as: UTF8.self)
+    // return companyDesc
 }
+

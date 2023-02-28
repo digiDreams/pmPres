@@ -90,7 +90,7 @@ let companies = [
 ]
 
 extension Company {
-    static var previewData: Company {
+    static var preview: Company {
         Company(name: faker.company.name(), address: faker.address.city())
     }
 }

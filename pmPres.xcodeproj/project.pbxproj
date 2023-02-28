@@ -11,6 +11,7 @@
 		7B8113D329AD953F00E071BF /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7B8113D229AD953F00E071BF /* RealmSwift */; };
 		7B8113D729AD989000E071BF /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7B8113D629AD989000E071BF /* OpenAISwift */; };
 		7B8113DA29AD992E00E071BF /* pmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8113D929AD992E00E071BF /* pmViewModel.swift */; };
+		7B8113DD29ADA24800E071BF /* CompanyViewDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8113DC29ADA24800E071BF /* CompanyViewDetail.swift */; };
 		7BC7B81129ACE540009C66C7 /* pmPresApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC7B81029ACE540009C66C7 /* pmPresApp.swift */; };
 		7BC7B81329ACE540009C66C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC7B81229ACE540009C66C7 /* ContentView.swift */; };
 		7BC7B81529ACE542009C66C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BC7B81429ACE542009C66C7 /* Assets.xcassets */; };
@@ -22,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		7B8113D929AD992E00E071BF /* pmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pmViewModel.swift; sourceTree = "<group>"; };
+		7B8113DB29AD9F4400E071BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7B8113DC29ADA24800E071BF /* CompanyViewDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyViewDetail.swift; sourceTree = "<group>"; };
 		7BC7B80D29ACE540009C66C7 /* pmPres.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pmPres.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC7B81029ACE540009C66C7 /* pmPresApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pmPresApp.swift; sourceTree = "<group>"; };
 		7BC7B81229ACE540009C66C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +76,7 @@
 		7BC7B80F29ACE540009C66C7 /* pmPres */ = {
 			isa = PBXGroup;
 			children = (
+				7B8113DB29AD9F4400E071BF /* Info.plist */,
 				7BC7B81029ACE540009C66C7 /* pmPresApp.swift */,
 				7BC7B83129AD0613009C66C7 /* Model */,
 				7B8113D829AD98E800E071BF /* ViewModel */,
@@ -96,6 +100,7 @@
 			children = (
 				7BC7B81229ACE540009C66C7 /* ContentView.swift */,
 				7BC7B82E29ACF544009C66C7 /* CompanyViewRow.swift */,
+				7B8113DC29ADA24800E071BF /* CompanyViewDetail.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -194,6 +199,7 @@
 				7BC7B82F29ACF544009C66C7 /* CompanyViewRow.swift in Sources */,
 				7BC7B81329ACE540009C66C7 /* ContentView.swift in Sources */,
 				7BC7B81129ACE540009C66C7 /* pmPresApp.swift in Sources */,
+				7B8113DD29ADA24800E071BF /* CompanyViewDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +331,7 @@
 				DEVELOPMENT_TEAM = Y928KDJ3DV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = pmPres/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -354,6 +361,7 @@
 				DEVELOPMENT_TEAM = Y928KDJ3DV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = pmPres/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

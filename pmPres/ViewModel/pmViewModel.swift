@@ -12,7 +12,7 @@ import OpenAISwift
 let openAI = OpenAISwift(authToken: "NETOKEN")
 
 func callIA(companyDetails: String) {
-    openAI.sendCompletion(with: "What can you tell about the company \(companyDetails) ?", maxTokens: 100) { result in // Result<OpenAI, OpenAIError>
+    openAI.sendCompletion(with: "What can you tell about the company \(companyDetails) history ? If nothing found, imagine something !", maxTokens: 100) { result in // Result<OpenAI, OpenAIError>
         switch result {
         case .success(let success):
             print(success.choices.first?.text ?? "")

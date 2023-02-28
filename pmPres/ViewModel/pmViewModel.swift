@@ -9,12 +9,6 @@ import Foundation
 import SwiftUI
 import OpenAISwift
 
-// let accessToken = ProcessInfo.processInfo.environment["NETOKEN"]
-
-/* struct Answer: Decodable  {
-    let value: String
-} */
-
 let openAI = OpenAISwift(authToken: "NETOKEN")
 
 func callIA(companyDetails: String) {
@@ -29,9 +23,5 @@ func callIA(companyDetails: String) {
         /* var decoded = result
         return decoded = try JSONDecoder().decode */
     }
-    
-    
-    // let companyDesc = String(decoding: data, as: UTF8.self)
-    // return companyDesc
 }
 

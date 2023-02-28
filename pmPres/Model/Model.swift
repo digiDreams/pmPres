@@ -10,7 +10,6 @@ import Fakery
 
 struct Company: Identifiable, Hashable {
     let id = UUID()
-    // let business: String
     let name: String
     let address: String
 }
@@ -26,10 +25,72 @@ let companies = [
     Company(name: faker.company.name(), address: faker.address.city()),
     Company(name: faker.company.name(), address: faker.address.city()),
     Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
+    Company(name: faker.company.name(), address: faker.address.city()),
 ]
 
 extension Company {
-    static var preview: Company {
+    static var previewData: Company {
         Company(name: faker.company.name(), address: faker.address.city())
     }
 }

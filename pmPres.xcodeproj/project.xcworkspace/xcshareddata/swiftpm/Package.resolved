@@ -8,6 +8,33 @@
         "revision" : "71cb3bf36a808534659d1248780c2bf3c4c4fc91",
         "version" : "5.1.0"
       }
+    },
+    {
+      "identity" : "openaiswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/adamrushy/OpenAISwift",
+      "state" : {
+        "branch" : "main",
+        "revision" : "cd4a532766b3bca303db070000559dd5ad67a639"
+      }
+    },
+    {
+      "identity" : "realm-core",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/realm/realm-core.git",
+      "state" : {
+        "revision" : "a7d486d07b821e28ffd3587e99355a63148cbb43",
+        "version" : "13.4.1"
+      }
+    },
+    {
+      "identity" : "realm-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/realm/realm-swift",
+      "state" : {
+        "branch" : "master",
+        "revision" : "9c6c86a61fb5953d729d21fd19ce651b9a862039"
+      }
     }
   ],
   "version" : 2

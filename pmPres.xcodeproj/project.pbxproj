@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B8113D129AD953F00E071BF /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 7B8113D029AD953F00E071BF /* Realm */; };
+		7B8113D329AD953F00E071BF /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7B8113D229AD953F00E071BF /* RealmSwift */; };
+		7B8113D729AD989000E071BF /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7B8113D629AD989000E071BF /* OpenAISwift */; };
+		7B8113DA29AD992E00E071BF /* pmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8113D929AD992E00E071BF /* pmViewModel.swift */; };
 		7BC7B81129ACE540009C66C7 /* pmPresApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC7B81029ACE540009C66C7 /* pmPresApp.swift */; };
 		7BC7B81329ACE540009C66C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC7B81229ACE540009C66C7 /* ContentView.swift */; };
 		7BC7B81529ACE542009C66C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BC7B81429ACE542009C66C7 /* Assets.xcassets */; };
@@ -17,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B8113D929AD992E00E071BF /* pmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pmViewModel.swift; sourceTree = "<group>"; };
 		7BC7B80D29ACE540009C66C7 /* pmPres.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pmPres.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC7B81029ACE540009C66C7 /* pmPresApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pmPresApp.swift; sourceTree = "<group>"; };
 		7BC7B81229ACE540009C66C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -31,6 +36,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B8113D729AD989000E071BF /* OpenAISwift in Frameworks */,
+				7B8113D329AD953F00E071BF /* RealmSwift in Frameworks */,
+				7B8113D129AD953F00E071BF /* Realm in Frameworks */,
 				7BC7B82B29ACF2A9009C66C7 /* Fakery in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,6 +46,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B8113D829AD98E800E071BF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7B8113D929AD992E00E071BF /* pmViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		7BC7B80429ACE540009C66C7 = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +75,7 @@
 			children = (
 				7BC7B81029ACE540009C66C7 /* pmPresApp.swift */,
 				7BC7B83129AD0613009C66C7 /* Model */,
+				7B8113D829AD98E800E071BF /* ViewModel */,
 				7BC7B83029AD0605009C66C7 /* Views */,
 				7BC7B81429ACE542009C66C7 /* Assets.xcassets */,
 				7BC7B81629ACE542009C66C7 /* Preview Content */,
@@ -109,6 +126,9 @@
 			name = pmPres;
 			packageProductDependencies = (
 				7BC7B82A29ACF2A9009C66C7 /* Fakery */,
+				7B8113D029AD953F00E071BF /* Realm */,
+				7B8113D229AD953F00E071BF /* RealmSwift */,
+				7B8113D629AD989000E071BF /* OpenAISwift */,
 			);
 			productName = pmPres;
 			productReference = 7BC7B80D29ACE540009C66C7 /* pmPres.app */;
@@ -140,6 +160,8 @@
 			mainGroup = 7BC7B80429ACE540009C66C7;
 			packageReferences = (
 				7BC7B82929ACF2A9009C66C7 /* XCRemoteSwiftPackageReference "Fakery" */,
+				7B8113CF29AD953F00E071BF /* XCRemoteSwiftPackageReference "realm-swift" */,
+				7B8113D529AD989000E071BF /* XCRemoteSwiftPackageReference "OpenAISwift" */,
 			);
 			productRefGroup = 7BC7B80E29ACE540009C66C7 /* Products */;
 			projectDirPath = "";
@@ -167,6 +189,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B8113DA29AD992E00E071BF /* pmViewModel.swift in Sources */,
 				7BC7B82D29ACF464009C66C7 /* Model.swift in Sources */,
 				7BC7B82F29ACF544009C66C7 /* CompanyViewRow.swift in Sources */,
 				7BC7B81329ACE540009C66C7 /* ContentView.swift in Sources */,
@@ -373,6 +396,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		7B8113CF29AD953F00E071BF /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		7B8113D529AD989000E071BF /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		7BC7B82929ACF2A9009C66C7 /* XCRemoteSwiftPackageReference "Fakery" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/vadymmarkov/Fakery";
@@ -384,6 +423,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		7B8113D029AD953F00E071BF /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B8113CF29AD953F00E071BF /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		7B8113D229AD953F00E071BF /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B8113CF29AD953F00E071BF /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		7B8113D629AD989000E071BF /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B8113D529AD989000E071BF /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
 		7BC7B82A29ACF2A9009C66C7 /* Fakery */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7BC7B82929ACF2A9009C66C7 /* XCRemoteSwiftPackageReference "Fakery" */;

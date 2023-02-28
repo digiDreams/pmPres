@@ -11,18 +11,25 @@ struct ContentView: View {
     var someCompanies = companies
     var body: some View {
         NavigationStack {
-            
-            List(someCompanies, id: \.self) { company in
-                NavigationLink {
-                    CompanyViewRow(company: company)
-                } label: {
-                    Text(company.name)
+            VStack {
+                List(someCompanies, id: \.self) { company in
+                    NavigationLink {
+                        CompanyViewRow(company: company)
+                    } label: {
+                        Text(company.name)
+                    }
+                    
                 }
+                .padding()
+                .listStyle(PlainListStyle())
+                Button(action: {
+                    // some code
+                }, label: {
+                    Text("Save list")
+                })
                 
+                .navigationTitle("Companies")
             }
-            .padding()
-            .listStyle(PlainListStyle())
-            .navigationTitle("Sociétés")
         }
     }
 }

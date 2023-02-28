@@ -6,16 +6,19 @@
 //
 
 import SwiftUI
-import Fakery
 
 struct CompanyViewRow: View {
     var company: Company
     
     var body: some View {
-        VStack {
-        Text("Bienvenue à la société \(company.name)")
-        Text(company.address)
-        }.multilineTextAlignment(.leading)
+        VStack(alignment: .leading) {
+            Text("Bienvenue à la société \(company.name)")
+               // .fontSize
+                .bold()
+                .padding(.bottom)
+            Text("\(company.address)")
+        } .navigationTitle(company.name)
+            .padding()
     }
 }
 

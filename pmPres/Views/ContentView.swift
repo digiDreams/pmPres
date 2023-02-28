@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Fakery
 
 struct ContentView: View {
     var someCompanies = companies
@@ -22,7 +21,7 @@ struct ContentView: View {
                 
             }
             .padding()
-            
+            .listStyle(PlainListStyle())
             .navigationTitle("Sociétés")
         }
     }

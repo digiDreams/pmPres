@@ -15,7 +15,9 @@ struct Company: Identifiable, Hashable {
     let address: String
 }
 
-let faker = Faker(locale: "fr-FR") // Adjust "locale" with desired country: see documentation here : https://faker.readthedocs.io/en/master/locales.html
+let faker = Faker(locale: "fr_FR")
+
+// Adjust "locale" with desired country: see documentation here : https://faker.readthedocs.io/en/master/locales.html
 
 let companies = [
     Company(name: faker.company.name(), address: faker.address.city()),
@@ -25,3 +27,9 @@ let companies = [
     Company(name: faker.company.name(), address: faker.address.city()),
     Company(name: faker.company.name(), address: faker.address.city()),
 ]
+
+extension Company {
+    static var preview: Company {
+        Company(name: faker.company.name(), address: faker.address.city())
+    }
+}
